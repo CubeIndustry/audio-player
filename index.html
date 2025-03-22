@@ -128,7 +128,7 @@
         }
 
         .stop-btn {
-            background-color: #C2C8CC;
+            background-color: #303030;
         }
 
         .progress-container {
@@ -220,6 +220,9 @@
         </div>
 
         <div class="player-controls">
+            <button class="control-btn" onclick="loopAudio()" id="loop-btn">
+                <i class="fas fa-sync-alt"></i>
+            </button>
             <button class="control-btn" onclick="prevTrack()">
                 <i class="fas fa-backward"></i>
             </button>
@@ -242,6 +245,7 @@
     <script>
         let currentTrack = 0;
         let isPlaying = false;
+        let isLooping = false;
         let playlist = [];
         const audio = new Audio();
 
@@ -347,7 +351,11 @@
         function seekAudio() {
             audio.currentTime = document.getElementById("progress-bar").value;
         }
-
+        function loopAudio(){
+            isLooping = !isLooping;
+            audio.loop = isLooping;
+            document.getElementById('loop-btn').style.backgroundColor = isLooping ? '#BDDFF0' : '#303030';
+        }
         function nextTrack() {
             currentTrack = (currentTrack === playlist.length - 1) ? 0 : currentTrack + 1;
             selectTrack(currentTrack);
