@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>MP3-Player</title>
+    <title>Audio-Player</title>
     <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" rel="stylesheet">
     <link rel="icon" href="https://cubeindustry.github.io/cloud/DATA/CubeIndustry/Pictures/Icons/icon.png" type="image/png">
     <link rel="apple-touch-icon" href="https://cubeindustry.github.io/cloud/DATA/CubeIndustry/Pictures/Icons/icon.png" type="image/png">
@@ -206,7 +206,7 @@
             <button class="close-btn" onclick="hideNotification()">x</button>
         </div>
 
-        <input type="file" id="fileInput" multiple accept="audio/mp3" onchange="loadFiles(event)" hidden>
+        <input type="file" id="fileInput" multiple accept=".mp3, .wav, .ogg" onchange="loadFiles(event)" hidden>
         <button onclick="document.getElementById('fileInput').click()" class="choose-song-btn">
             <i class="fas fa-folder-open"></i> choose
         </button>        
