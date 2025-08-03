@@ -33,7 +33,7 @@
         }
 
         body {
-            background-color: #0E1525;
+            background-color: #8C1E1E;
             color: #C2C8CC;
             font-family: 'Manrope', sans-serif;
             padding: 20px;
@@ -45,7 +45,7 @@
         }
 
         .audio-player {
-            background: linear-gradient(145deg, #1C2333, #1B202E); 
+            background: linear-gradient(145deg, #7E1F1F, #7E1F1F); 
             border-radius: 20px;
             padding: 20px;
             box-shadow: 0 4px 20px rgba(0, 0, 0, 0.3);
@@ -61,7 +61,7 @@
         }
 
         .choose-song-btn {
-            background: linear-gradient(145deg, #C2C8CC, #A3A9AC);
+            background: linear-gradient(145deg, #5E1A1A, #5E1A1A);
             border-radius: 25px;
             color: white;
             padding: 10px 20px;
@@ -77,11 +77,11 @@
         }
 
         .choose-song-btn:hover {
-            background-color: #C2C8CC;
+            background-color: #5E1A1A;
         }
 
         .track {
-            background-color: #303030;
+            background-color: #5E1A1A;
             color: #fff;
             padding: 10px;
             border-radius: 15px;
@@ -96,11 +96,11 @@
         }
 
         .track-buttons i:hover {
-            color: #C2C8CC; 
+            color: #5E1A1A; 
         }
 
         .track:hover {
-            background-color: #404040;
+            background-color: #5E1A1A;
         }
 
         .player-controls {
@@ -113,7 +113,7 @@
         .control-btn {
             width: 60px;
             height: 60px;
-            background-color: #303030;
+            background-color: #5E1A1A;
             border-radius: 50%;
             color: #fff;
             font-size: 1.5em;
@@ -123,12 +123,12 @@
         }
 
         .control-btn:hover {
-            background-color: #C2C8CC;
+            background-color: #5E1A1A;
             transform: scale(1.1);
         }
 
         .stop-btn {
-            background-color: #303030;
+            background-color: #5E1A1A;
         }
 
         .progress-container {
@@ -141,7 +141,7 @@
         .progress-bar, #volume, #speed, #progress-bar {
             width: 80%;
             height: 8px;
-            background: #303030;
+            background: #5E1A1A;
             border-radius: 10px;
             outline: none;
             transition: background 0.3s ease;
@@ -153,7 +153,7 @@
 
         .volume-display {
             font-size: 0.85em;
-            color: #C2C8CC;
+            color: #fff;
             padding-top: 5px;
         }
 
@@ -166,7 +166,7 @@
             position: fixed;
             top: 20px;
             right: 20px;
-            background: linear-gradient(145deg, #303030, #585858);
+            background: linear-gradient(145deg, #5E1A1A, #5E1A1A);
             color: #fff;
             padding: 15px 25px;
             border-radius: 15px;
@@ -182,14 +182,14 @@
 
         .notification .close-btn {
             background-color: transparent;
-            color: #C2C8CC;
+            color: #fff;
             font-size: 1.5em;
             cursor: pointer;
             border: none;
         }
 
         .notification .close-btn:hover {
-            color: #C2C8CC;
+            color: #fff;
         }
 
         @keyframes fade-in-out {
@@ -354,7 +354,7 @@
         function loopAudio(){
             isLooping = !isLooping;
             audio.loop = isLooping;
-            document.getElementById('loop-btn').style.backgroundColor = isLooping ? '#BDDFF0' : '#303030';
+            document.getElementById('loop-btn').style.backgroundColor = isLooping ? '#8C1E1E' : '#5E1A1A';
         }
         function nextTrack() {
             currentTrack = (currentTrack === playlist.length - 1) ? 0 : currentTrack + 1;
